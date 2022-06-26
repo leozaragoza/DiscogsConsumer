@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="image_card_size">50dp</dimen>
+    <dimen name="card_text_size">20sp</dimen>
+    <dimen name="card_text_mt">10dp</dimen>
+    <dimen name="card_padding">10dp</dimen>
+    <dimen name="card_elevation">5dp</dimen>
+    <dimen name="card_margin">10dp</dimen>
+    <dimen name="card_corner_radius">10dp</dimen>
+    <dimen name="welcome_text_size">20sp</dimen>
+    <dimen name="card_layout_mt">10dp</dimen>
+    <dimen name="toolbar_text_margin">10dp</dimen>
+    <dimen name="toolbar_text_size">16sp</dimen>
+    <dimen name="list_margin_start">10dp</dimen>
+    <dimen name="list_margin_end">10dp</dimen>
+    <dimen name="list_text_size">16sp</dimen>
+    <dimen name="list_card_cr">5dp</dimen>
+    <dimen name="info_container_margin">10dp</dimen>
+    <dimen name="iv_detail_size">150dp</dimen>
+    <dimen name="info_container_mt">16dp</dimen>
+    <dimen name="progress_bar_size">120dp</dimen>
+    <dimen name="info_container_margin_bottom">16dp</dimen>
+    <dimen name="detail_padding">20dp</dimen>
+</resources>

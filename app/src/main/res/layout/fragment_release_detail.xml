@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="@dimen/detail_padding"
+    android:orientation="vertical"
+    tools:context=".ui.fragment.ReleaseDetailFragment">
+    <TextView
+        android:id="@+id/release_detail_lb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:text="@string/release_details" />
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <androidx.cardview.widget.CardView
+                app:cardElevation="@dimen/card_elevation"
+                app:cardCornerRadius="@dimen/list_card_cr"
+                style="@style/DetailsCardStyle">
+                <LinearLayout
+                    style="@style/DetailHorizontalLayoutStyle">
+                    <TextView
+                        android:layout_height="wrap_content"
+                        style="@style/LabelDetailStyle"
+                        android:text="@string/status">
+                    </TextView>
+                    <TextView
+                        android:id="@+id/status"
+                        android:layout_height="wrap_content"
+                        style="@style/ValueDetailStyle"
+                        tools:text="@string/artist_sample">
+                    </TextView>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                app:cardElevation="@dimen/card_elevation"
+                app:cardCornerRadius="@dimen/list_card_cr"
+                style="@style/DetailsCardStyle">
+
+                <LinearLayout
+                    style="@style/DetailHorizontalLayoutStyle">
+                    <TextView
+                        android:layout_height="wrap_content"
+                        style="@style/LabelDetailStyle"
+                        android:text="@string/type">
+                    </TextView>
+                    <TextView
+                        android:id="@+id/type"
+                        android:layout_height="wrap_content"
+                        style="@style/ValueDetailStyle"
+                        tools:text="@string/artist_sample">
+                    </TextView>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+
+            <androidx.cardview.widget.CardView
+                app:cardElevation="@dimen/card_elevation"
+                app:cardCornerRadius="@dimen/list_card_cr"
+                style="@style/DetailsCardStyle">
+
+                <LinearLayout
+                    style="@style/DetailHorizontalLayoutStyle">
+                    <TextView
+                        android:text="@string/title"
+                        android:layout_height="wrap_content"
+                        style="@style/LabelDetailStyle">
+                    </TextView>
+                    <TextView
+                        android:id="@+id/title"
+                        android:layout_height="wrap_content"
+                        style="@style/ValueDetailStyle"
+                        tools:text="@string/artist_sample">
+                    </TextView>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                app:cardElevation="@dimen/card_elevation"
+                app:cardCornerRadius="@dimen/list_card_cr"
+                style="@style/DetailsCardStyle">
+
+                <LinearLayout
+                    style="@style/DetailHorizontalLayoutStyle">
+                    <TextView
+                        android:layout_height="wrap_content"
+                        style="@style/LabelDetailStyle"
+                        android:text="@string/year">
+                    </TextView>
+                    <TextView
+                        android:id="@+id/year"
+                        android:layout_height="wrap_content"
+                        style="@style/ValueDetailStyle"
+                        tools:text="@string/artist_sample">
+                    </TextView>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                app:cardElevation="@dimen/card_elevation"
+                app:cardCornerRadius="@dimen/list_card_cr"
+                style="@style/DetailsCardStyle">
+
+                <LinearLayout
+                    style="@style/DetailHorizontalLayoutStyle">
+                    <TextView
+                        android:layout_height="wrap_content"
+                        style="@style/LabelDetailStyle"
+                        android:text="@string/artist">
+                    </TextView>
+                    <TextView
+                        android:id="@+id/artist"
+                        android:layout_height="wrap_content"
+                        style="@style/ValueDetailStyle"
+                        tools:text="@string/artist_sample">
+                    </TextView>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                app:cardElevation="@dimen/card_elevation"
+                app:cardCornerRadius="@dimen/list_card_cr"
+                style="@style/DetailsCardStyle">
+
+                <LinearLayout
+                    style="@style/DetailHorizontalLayoutStyle">
+                    <TextView
+                        android:layout_height="wrap_content"
+                        style="@style/LabelDetailStyle"
+                        android:text="@string/label_l">
+                    </TextView>
+                    <TextView
+                        android:id="@+id/label"
+                        android:layout_height="wrap_content"
+                        style="@style/ValueDetailStyle"
+                        tools:text="@string/artist_sample">
+                    </TextView>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                app:cardElevation="@dimen/card_elevation"
+                app:cardCornerRadius="@dimen/list_card_cr"
+                style="@style/DetailsCardStyle">
+
+                <LinearLayout
+                    style="@style/DetailHorizontalLayoutStyle">
+                    <TextView
+                        style="@style/LabelDetailStyle"
+                        android:layout_height="wrap_content"
+                        android:text="@string/format" />
+
+                    <TextView
+                        android:id="@+id/format"
+                        android:layout_height="wrap_content"
+                        style="@style/ValueDetailStyle"
+                        tools:text="@string/artist_sample">
+                    </TextView>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

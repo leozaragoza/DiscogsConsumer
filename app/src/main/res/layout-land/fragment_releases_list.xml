@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+    <!-- two_pane.xml -->
+    <androidx.slidingpanelayout.widget.SlidingPaneLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/sliding_pane_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <!-- The first child view becomes the left pane. When the combined
+             desired width (expressed using android:layout_width) would
+             not fit on-screen at once, the right pane is permitted to
+             overlap the left. -->
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:id="@+id/list_pane"
+            android:layout_width="280dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="start"
+            android:orientation="vertical">
+            <androidx.appcompat.widget.Toolbar
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:id="@+id/toolbar_title"
+                        android:layout_margin="@dimen/toolbar_text_margin"
+                        android:layout_gravity="center"
+                        android:layout_width="wrap_content"
+                        android:text="@string/Releases"
+                        android:textSize="@dimen/toolbar_text_size"
+                        android:layout_height="wrap_content"/>
+                </FrameLayout>
+            </androidx.appcompat.widget.Toolbar>
+            <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+                android:id="@+id/swipe_refresh_ly"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center">
+                    <ProgressBar
+                        android:visibility="gone"
+                        android:id="@+id/progress_bar"
+                        android:layout_gravity="center"
+                        android:layout_width="@dimen/progress_bar_size"
+                        android:layout_height="@dimen/progress_bar_size"/>
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/releases_rv"
+                        android:layout_marginStart="@dimen/list_margin_start"
+                        android:layout_marginEnd="@dimen/list_margin_end"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" />
+                </FrameLayout>
+            </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <!-- The second child becomes the right (content) pane. In this
+             example, android:layout_weight is used to expand this detail pane
+             to consume leftover available space when the
+             the entire window is wide enough to fit both the left and right pane.-->
+        <androidx.fragment.app.FragmentContainerView
+            android:id="@+id/detail_container"
+            android:layout_width="300dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:name="com.tasks.discogsconsumer.ui.fragment.ReleaseDetailFragment" />
+    </androidx.slidingpanelayout.widget.SlidingPaneLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

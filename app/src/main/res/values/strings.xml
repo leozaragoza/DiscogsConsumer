@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">DiscogsConsumer</string>
+    <string name="Releases">Releases</string>
+    <string name="title">Title:</string>
+    <string name="sample_title_name">Amazing</string>
+    <string name="artist">Artist:</string>
+    <string name="artist_sample">Aerosmith</string>
+    <string name="year">Year:</string>
+    <string name="year_sample">1993</string>
+    <string name="rotation_period">Rotation Period</string>
+    <string name="climate">Climate:</string>
+    <string name="terrain">Terrain:</string>
+    <string name="population">Population:</string>
+    <string name="feature_not_implemented_yet">Feature not implemented yet, it will be ready for you soon ;)</string>
+    <string name="status">Status:</string>
+    <string name="type">Type:</string>
+    <string name="format">Format:</string>
+    <string name="label_l">Label:</string>
+    <string name="release_details">Release Details</string>
+    <string name="internet_not_connected">INTERNET not connected, showing offline results</string>
+</resources>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph.xml"
+    app:startDestination="@id/releasesListFragment">
+
+    <fragment
+        android:id="@+id/releasesListFragment"
+        android:name="com.tasks.discogsconsumer.ui.fragment.ReleasesListFragment"
+        android:label="ReleasesListFragment" >
+        <action
+            android:id="@+id/action_releasesListFragment_to_releaseDetailFragment"
+            app:destination="@id/releaseDetailFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/releaseDetailFragment"
+        android:name="com.tasks.discogsconsumer.ui.fragment.ReleaseDetailFragment"
+        android:label="fragment_release_detail"
+        tools:layout="@layout/fragment_release_detail" />
+</navigation>
